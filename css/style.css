@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap');
-
 :root {
     --border: 1px solid #4A4A4A;
 }
@@ -205,7 +204,7 @@ body {
 .header__text-under-image {
     position: relative;
     bottom: 20px;
-    margin-left: 123px;
+    margin-left: 98px;
 }
 
 @media (max-width: 1259px) {
@@ -220,7 +219,7 @@ body {
     }
 
     .header__text-under-image {
-        margin-left: 60px;
+        margin-left: 50px;
         bottom: 25px;
         max-width: 865px;
     }
@@ -242,7 +241,7 @@ body {
     }
 
     .header__text-under-image {
-        margin-left: 47px;
+        margin-left: 33px;
         bottom: 25px;
         max-width: 665px;
     }
@@ -264,7 +263,7 @@ body {
     }
 
     .header__text-under-image {
-        margin-left: 30px;
+        margin-left: 25px;
         bottom: 5px;
         max-width: 400px;
     }
