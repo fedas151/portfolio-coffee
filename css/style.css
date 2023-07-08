@@ -320,18 +320,37 @@ body {
     }
 }
 
+@keyframes translateinfinite {
+	100% { transform:translateX(calc(-180px * 12));  }
+}
 
 .sponsors__container {
-    
-    display: flex;
-    justify-content: space-between;
-    padding: 58px 30px 63px 30px;
-
+    overflow: hidden;
+    transition:all .3s ease;
+    &::before,
+	&::after {
+		content: " ";
+		position:absolute;
+		z-index:9;
+		width:180px;
+		height:100%;	
+	}
+	
 }
+
+.sponsors {
+    width: 5000px;
+    display: flex;
+    justify-content: center;
+    padding: 58px 30px 63px 30px;
+}
+
+
 .sponsor__hilton {
 }
 .sponsor {
-    
+    animation:translateinfinite 30s linear infinite;
+    margin-left: 100px;
 }
 .sponsor__ihg {
 }
@@ -345,7 +364,7 @@ body {
 @media (max-width: 991.98px) {
 
     .sponsors__container {
-        padding: 48px 0px 53px 0px;
+        padding: 0px 0px 0px 0px;
     }
 
     .sponsor {
@@ -357,7 +376,15 @@ body {
 @media (max-width: 768.98px) {
 
     .sponsors__container {
-        padding: 28px 0px 33px 0px;
+        padding: 0px 0px 0px 0px;
+    }
+
+    .sponsors {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .sponsors {
+        width: 3000px;
     }
 
     .sponsor {
