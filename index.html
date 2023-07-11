@@ -14,8 +14,7 @@
 </head>
 <body>
     <div class="wrapper">
-        <div class="container">
-            <div class="header">
+        <div class="container header sticky">
                 <div class="navbar__container">
                     <div class="nav__logo">
                         <img src="./images/logo.svg" alt="logo">
@@ -25,17 +24,15 @@
                         <img src="./images/OFerror.svg" alt="">
                     </div>
                     <div class="nav__menu">
-                        <a href="" class="nav__btn-home btn">Home</a>
-                        <a href="" class="nav__btn-services btn">Services</a>
-                        <a href="" class="nav__btn-projects btn">Projects</a>
-                        <a href="" class="nav__btn-about btn">About</a>
-                        
+                        <a href="#" class="nav__btn-home btn" onclick= "scrollElement()">Home</a>
+                        <a href="#" class="nav__btn-services btn">Statistics</a>
+                        <a href="#" class="nav__btn-projects btn">Projects</a>
+                        <a href="#" class="nav__btn-about btn">About</a>
                     </div>
                     <div class="nav__btn">
-                        <a href="" class="nav__btn-signin btn">Sign In</a>
+                        <a href="" class="nav__btn-signin">Sign In</a>
                     </div>
                 </div>
-            </div>
         </div>
         <div class="container">            
             <div class="header__container">
@@ -313,5 +310,6 @@
             </div>
         </footer>
     </div>
+    <script src="js/app.min.js"></script>
 </body>
 </html>
