@@ -932,7 +932,8 @@ body {
 }
 .footer__container {
     max-width: 1250px;
-    margin: 193px 5.5vw 10px 5.5vw;
+    margin-top: 193px;
+    margin-bottom: 10px;
 }
 .footer__container-top {
     display: flex;
